@@ -13,15 +13,15 @@ test('Renders screen', () => {
   render(<Provider store={store}>
     <App />
   </Provider>);
-  const devicesTitle = screen.getByText('Devices');
+  const devicesTitle = screen.getByText('Github Search');
   expect(devicesTitle).toBeInTheDocument();
 });
 
-const baseUrl = 'http://localhost:3000';
-describe(`Test if Backend API's Server is  Up`, () => {
+const baseUrl = 'https://api.github.com';
+describe(`Test if GitHub API's Server is  Up`, () => {
 	it('should return a 200 status code', async () => {
 		const response = await request(baseUrl)
-			.get('/');
+			.get('/zen');
 		expect(response.statusCode).toBe(200);
 	});
 });
