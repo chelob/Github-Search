@@ -6,7 +6,7 @@ const initialState = {
     usersKeyword: ''
 }
 
-export default function (state = initialState, action) {
+ function userReducer (state = initialState, action) {
 
     switch (action.type) {
         case SEARCH_USERS:
@@ -29,3 +29,5 @@ export default function (state = initialState, action) {
     }
 
 }
+
+export default userReducer;

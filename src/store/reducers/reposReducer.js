@@ -6,7 +6,7 @@ const initialState = {
     reposKeyword: ''
 }
 
-export default function (state = initialState, action) {
+function reposReducer (state = initialState, action) {
 
     switch (action.type) {
         case SEARCH_REPOS:
@@ -29,3 +29,5 @@ export default function (state = initialState, action) {
     }
 
 }
+
+export default reposReducer;
