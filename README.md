@@ -4,7 +4,7 @@ This is a small exercise that uses the GitHub API, allows to perform users and r
 
 # Steps to Start the project
 
-1. Download or clone this repository in order to use the server app. (https://github.com/NinjaMSP/devicesTask_serverApp).
+1. Download or clone this repository in order to use the server app. (https://github.com/chelob/Github-Search).
 
 2. Install node dependencies and run the backend project by running in the backed API's server repository folder:
 ```
@@ -29,7 +29,7 @@ This is a small exercise that uses the GitHub API, allows to perform users and r
 2. The app test consist in 2 tests
 
     1. Renders screen: this test verifies if the app is being rendered.
-    2. Backend is up: this test verifies if the backend server is running.
+    2. Backend is up: this test verifies if the GitHub APIs are running.
 
 
 # Getting Started with Create React App
