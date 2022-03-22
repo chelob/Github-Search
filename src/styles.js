@@ -22,17 +22,40 @@ export const FormControlSearch = styled(FormControl)`
     }
 `;
 
-export const UserCardContainer = styled.div`
-    display: flex;    
+export const UsersCardsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    position: relative;
-    width: 100%;
-    border: solid 1px #ced4da; 
+    justify-content: space-between;
 
-    &:nth-child(2n){
-        background-color: #ced4da;
+    @media only screen and (min-width: 728px) {
+        flex-direction: row;
+    }
+`;
+
+export const UserCardContainer = styled.div`
+    width: 100%;
+    margin: 10px 0;
+
+    @media only screen and (min-width: 728px) {
+        width: 48%;
     }
 
+    @media only screen and (min-width: 1024px) {
+        width: 23%;
+    }
+`;
+
+export const UserCardItem = styled.div`
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: solid 1px #ced4da; 
 `;
 
 export const AvatarImage = styled.img`
@@ -78,16 +101,41 @@ export const ClearButton = styled(Button)`
     }
 `;
 
-export const RepoCardContainer = styled.div`
-    display: block;
-    position: relative;
-    width: 100%;
-    border: solid 1px #ced4da; 
+export const ReposCardsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    &:nth-child(2n){
-        background-color: #ced4da;
+    @media only screen and (min-width: 728px) {
+        flex-direction: row;
+    }
+`;
+
+export const RepoCardContainer = styled.div`
+    width: 100%;
+    margin: 10px 0;
+
+    @media only screen and (min-width: 728px) {
+        width: 48%;
     }
 
+    @media only screen and (min-width: 1024px) {
+        width: 32%;
+    }
+    
+`;
+
+export const RepoCardItem = styled.div`
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: solid 1px #ced4da; 
 `;
 
 export const RepoInfo = styled.div`
@@ -126,4 +174,38 @@ export const AboutDescription = styled.p`
     font-size: 16px;
     margin-bottom: 10px;
 `;
+
+
+export const FiltersContainer = styled.div`
+    display: flex;
+    justify-content: right;
+    margin: 10px 0;
+`;
+
+export const LanguagesFilterSelect = styled.select`
+    width: 200px;
+    height: 35px;
+    background: white;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    border-color: #ced4da;
+
+    option {
+        color: black;
+        background: white;
+        display: flex;
+        white-space: pre;
+        padding: 0px 2px 1px;
+    }
+`;
+
+export const ClearFiltersButton = styled(Button)`
+    &:focus {
+        box-shadow: none;
+    }
+`;
+
+
+
+
 

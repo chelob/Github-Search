@@ -3,7 +3,8 @@ import { SEARCH_REPOS, CLEAR_SEARCH_REPOS } from '../types'
 const initialState = {
     repos: [],
     reposPage: 1,
-    reposKeyword: ''
+    reposKeyword: '',
+    reposLanguage: ''
 }
 
 function reposReducer (state = initialState, action) {
@@ -14,7 +15,8 @@ function reposReducer (state = initialState, action) {
                 ...state,
                 repos: action.payload,
                 reposPage: action.payload.reposPage,
-                reposKeyword: action.payload.reposKeyword
+                reposKeyword: action.payload.reposKeyword,
+                reposLanguage: action.payload.reposLanguage
             }
 
         case CLEAR_SEARCH_REPOS:
@@ -22,7 +24,8 @@ function reposReducer (state = initialState, action) {
                 ...state,
                 repos: [],
                 reposPage: 1,
-                reposKeyword: ''
+                reposKeyword: '',
+                reposLanguage: ''
             }
 
         default: return state

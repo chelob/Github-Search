@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const searchUsers = (key, page) => async dispatch => {
     try {
-        const res = await axios.get(`https://api.github.com/search/users?q=${key}${page?`&page=${page}`:''}`);
+        const res = await axios.get(`https://api.github.com/search/users?q=${key}${page?`&page=${page}`:''}&per_page=30`);
         dispatch({
             type: SEARCH_USERS,
             payload: {usresKeyword: key, usersPage: page, ...res.data}
