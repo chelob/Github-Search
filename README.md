@@ -62,5 +62,8 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 
+# Deployment Process
 
+This project is deployed with Netlify,  [For more information](https://docs.netlify.com/get-started/).
+Run a live demo [here](https://infallible-johnson-d828bc.netlify.app/).
 
