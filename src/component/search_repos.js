@@ -33,10 +33,11 @@ function SearchRepos() {
 
     function getLanguages(repos) {
         let languages = [];
-        repos.map(repo => {
+        repos.forEach(repo => {
             repos.includes(repo.language)
             if (!languages.includes(repo.language))
                 languages.push(repo.language)
+                
         })
         return languages.sort();
     }
